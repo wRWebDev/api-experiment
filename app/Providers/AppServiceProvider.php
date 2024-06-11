@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use App\Models\EloquentDevelopmentModel;
+use App\Services\EloquentDevelopmentService;
 use App\Contracts\DevelopmentServiceInterface;
 
 class AppServiceProvider extends ServiceProvider
@@ -12,7 +12,7 @@ class AppServiceProvider extends ServiceProvider
     ];
 
     public array $singletons = [
-        DevelopmentServiceInterface::class => EloquentDevelopmentModel::class,
+        DevelopmentServiceInterface::class => EloquentDevelopmentService::class,
     ];
 
     /**
