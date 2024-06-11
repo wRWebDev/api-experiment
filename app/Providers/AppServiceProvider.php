@@ -3,10 +3,16 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Models\EloquentDevelopmentModel;
+use App\Contracts\DevelopmentServiceInterface;
 
 class AppServiceProvider extends ServiceProvider
 {
     public array $bindings = [
+    ];
+
+    public array $singletons = [
+        DevelopmentServiceInterface::class => EloquentDevelopmentModel::class,
     ];
 
     /**
