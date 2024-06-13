@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class DevelopmentController extends Controller
 {
-    //
+    public function __invoke()
+    {
+        return response(status: 200);
+    }
 }
