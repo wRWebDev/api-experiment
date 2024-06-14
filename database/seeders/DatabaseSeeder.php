@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use App\Models\EloquentDevelopmentModel;
 use Illuminate\Database\Seeder;
+use App\Models\EloquentDevelopmentModel;
 
 class DatabaseSeeder extends Seeder
 {

@@ -12,13 +12,13 @@ class DevelopmentController extends Controller
         $queryParameter = 'postcode';
         $serviceInterface = app(DevelopmentServiceInterface::class);
 
-        if (!$request->has($queryParameter)) {
+        if (! $request->has($queryParameter)) {
             return $serviceInterface->fetch();
         }
 
         $query = $request->query($queryParameter);
 
-        if (!$query) {
+        if (! $query) {
             return [];
         }
 

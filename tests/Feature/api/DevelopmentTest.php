@@ -9,8 +9,8 @@ use App\Models\EloquentDevelopmentModel as Development;
 
 class DevelopmentTest extends TestCase
 {
-    use WithFaker;
     use RefreshDatabase;
+    use WithFaker;
 
     public function test_index_developments_route_exists(): void
     {
@@ -29,7 +29,7 @@ class DevelopmentTest extends TestCase
 
     public function test_get_developments_can_be_queried_by_postcode(): void
     {
-        $postcode = $this->faker->postcode; 
+        $postcode = $this->faker->postcode;
         $development = Development::factory()->create([
             'postcode' => $postcode,
         ]);
@@ -42,7 +42,7 @@ class DevelopmentTest extends TestCase
                 [
                     'name' => $development->name,
                     'postcode' => $postcode,
-                ]
+                ],
             ]);
     }
 

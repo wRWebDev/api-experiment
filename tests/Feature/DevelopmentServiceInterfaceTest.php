@@ -2,10 +2,10 @@
 
 namespace Tests\Feature;
 
-use App\Contracts\DevelopmentServiceInterface;
-use App\Models\EloquentDevelopmentModel;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
+use App\Models\EloquentDevelopmentModel;
+use App\Contracts\DevelopmentServiceInterface;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class DevelopmentServiceInterfaceTest extends TestCase
 {

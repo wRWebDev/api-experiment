@@ -2,9 +2,9 @@
 
 namespace App\Services;
 
-use App\Contracts\DevelopmentServiceInterface;
-use App\Models\EloquentDevelopmentModel;
 use Illuminate\Support\Collection;
+use App\Models\EloquentDevelopmentModel;
+use App\Contracts\DevelopmentServiceInterface;
 
 class EloquentDevelopmentService implements DevelopmentServiceInterface
 {

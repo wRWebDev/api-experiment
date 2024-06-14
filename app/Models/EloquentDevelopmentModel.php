@@ -3,8 +3,8 @@
 namespace App\Models;
 
 use App\Dto\DevelopmentDto;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class EloquentDevelopmentModel extends Model
 {
